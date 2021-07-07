@@ -20,22 +20,26 @@
 
 <br>
 
-藉由 git clone 將專案下載至本地
+1. 藉由 git clone 將專案下載至本地
 ```
-git clone https://github.com/WilliamTsou818/trashtalk.git
+git clone https://github.com/WilliamTsou818/trashTalk.git
 ```
-進入專案資料夾
+2. 進入專案資料夾
 ```
-cd trashtalk
+cd trash-talk-generator
 ```
-安裝套件
+3. 安裝套件
 ```
-npm i express express-handlebars
-npm i nodemon
+npm install
 ```
-啟動網頁伺服器
+4. 啟動網頁伺服器
 ```
 npm run dev
 ```
+5. 出現下列訊息，表示啟動成功，可點選連結開啟網頁
+
+The server is running on http://localhost:3000
+
+
 
 
