@@ -11,29 +11,29 @@ function randomIndex (array) {
   return index
 }
 
-function generateTrashtalk (target) {
-  let trashtalk
+function generateTrashTalk (target) {
+  let trashTalk
   if (target.engineer === 'on') {
-    trashtalk = '工程師'
-    trashtalk += task.engineer[randomIndex(task.engineer)]
-    trashtalk += phrase[randomIndex(phrase)]
-    trashtalk += '吧？>W<'
-    return trashtalk
+    trashTalk = '工程師'
+    trashTalk += task.engineer[randomIndex(task.engineer)]
+    trashTalk += phrase[randomIndex(phrase)]
+    trashTalk += '吧？>W<'
+    return trashTalk
   }
   if (target.designer === 'on') {
-    trashtalk = '設計師'
-    trashtalk += task.designer[randomIndex(task.designer)]
-    trashtalk += phrase[randomIndex(phrase)]
-    trashtalk += '吧？>W<'
-    return trashtalk
+    trashTalk = '設計師'
+    trashTalk += task.designer[randomIndex(task.designer)]
+    trashTalk += phrase[randomIndex(phrase)]
+    trashTalk += '吧？>W<'
+    return trashTalk
   }
   if (target.entrepreneur === 'on') {
-    trashtalk = '創業家'
-    trashtalk += task.entrepreneur[randomIndex(task.entrepreneur)]
-    trashtalk += phrase[randomIndex(phrase)]
-    trashtalk += '吧？>W<'
-    return trashtalk
+    trashTalk = '創業家'
+    trashTalk += task.entrepreneur[randomIndex(task.entrepreneur)]
+    trashTalk += phrase[randomIndex(phrase)]
+    trashTalk += '吧？>W<'
+    return trashTalk
   }
 }
 
-module.exports = generateTrashtalk
+module.exports = generateTrashTalk

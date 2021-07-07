@@ -1,6 +1,6 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
-const generateTrashtalk = require('./models/trashtalk')
+const generateTrashTalk = require('./models/trashTalk')
 
 const port = 3000
 
@@ -16,8 +16,8 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
   const target = req.body
-  const trashtalk = generateTrashtalk(target)
-  res.render('index', { trashtalk })
+  const trashTalk = generateTrashTalk(target)
+  res.render('index', { trashTalk })
 })
 
 // listening server
