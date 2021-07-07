@@ -7,8 +7,7 @@ const task = {
 const phrase = ['很簡單', '很容易', '很快', '很正常']
 
 function randomIndex (array) {
-  const index = Math.floor(Math.random() * array.length)
-  return index
+  return Math.floor(Math.random() * array.length)
 }
 
 function generateTrashTalk (target) {
