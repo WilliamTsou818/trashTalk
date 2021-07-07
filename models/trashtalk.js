@@ -13,21 +13,21 @@ function randomIndex (array) {
 
 function generateTrashTalk (target) {
   let trashTalk
-  if (target.engineer === 'on') {
+  if (target.person === 'engineer') {
     trashTalk = '工程師'
     trashTalk += task.engineer[randomIndex(task.engineer)]
     trashTalk += phrase[randomIndex(phrase)]
     trashTalk += '吧？>W<'
     return trashTalk
   }
-  if (target.designer === 'on') {
+  if (target.person === 'designer') {
     trashTalk = '設計師'
     trashTalk += task.designer[randomIndex(task.designer)]
     trashTalk += phrase[randomIndex(phrase)]
     trashTalk += '吧？>W<'
     return trashTalk
   }
-  if (target.entrepreneur === 'on') {
+  if (target.person === 'entrepreneur') {
     trashTalk = '創業家'
     trashTalk += task.entrepreneur[randomIndex(task.entrepreneur)]
     trashTalk += phrase[randomIndex(phrase)]
